@@ -27,7 +27,7 @@ io.on('connection',(socket)=>{
         const filter = new Filter
 
         if(filter.isProfane(message)){
-            return callback('Que é o que é rapai? Walk men, Walk!!')
+            return callback('Callback')
         }
 
         io.emit('message',generateMessage(message))
